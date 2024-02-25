@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <title>My application</title>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script src="/js/category.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <h1>Wiki Ads</h1>
+
+    <div id="CategoriesDiv"><div>
+        <fieldset>
+        <div id="identification-form">
+            <button type="button" onclick="favorites()">Your favorites</button>
+            <h2>Login</h2>
+            <form id="login-form">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+              </br>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              </br>
+              </br>
+              <button type="button" onclick="login()">Login</button>
+              <p id="login-message"></p>
+            </form>
+        </div>
+    </fieldset>
+
+</body>
+
+</html>

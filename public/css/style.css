@@ -1,0 +1,53 @@
+/* Put your CSS stylesheets here */
+
+h1 {
+    color: blue;
+}
+img{
+    width: 350px;
+    height: auto;
+    margin: 10px;
+}
+
+.image-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+fieldset { /*right width*/
+    width: 98%;
+    border: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 40%;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #fcfafa;
+  }
+
+  .heart-button {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .heart-button::before {
+    content: '\2764'; 
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    transform: scale(1.5);
+    margin-right: 1px; 
+  }
