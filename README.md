@@ -2,12 +2,13 @@
 
 
 
-Οι βιβλιοθήκες που χρησιμοποιήσαμε είναι οι express, node, fs, path, body-parser, uuid
-• Το project μας αποτελείται από 4 html, 4 javascript, 1 server (index.js) και 1 css αρχείο
-• Όλα τα δεδομένα γίνονται fetch από την ιστοσελίδα wiki-ads και παράγονται δυναμικά στα html αρχεία.
-• ‘Έχει αναπτυχθεί πλήρης αρχιτεκτονική client-server όπως ορίζει η εκφώνηση. Ο server στέλνει στον client τα html αρχεία, παρέχει LS, AFS, FRS Services, καθώς και διατηρεί λίστες με αγαπημένα ανά χρήστη . Οι λίστες με αγαπημένα δεν εξαρτώνται από την κατηγορία, δηλαδή στα αγαπημένα μπορούν να βρίσκονται αγγελίες με σπίτια καθώς και αυτοκίνητα
-• Για την εκκίνηση του server αρκεί η εντολή node index.js στο terminal. Δεν υπάρχει κάποια άλλη εξάρτηση.
+- Our project consists of 4 html, 4 javascript, 1 server (index.js) and 1 css file
+- All data is fetched from the wiki-ads website and dynamically generated in the html files.
+- Full client-server architecture has been developed. Server sends to the client the html files, provides LS, AFS, FRS Services, and maintains lists of favorites per user . The lists of favorites are not category dependent, i.e. favorites can include ads for houses as well as cars
+- To start the server, the node index.js command in the terminal is sufficient. There is no other dependency.
+ 
 
+The libraries we used are express, node, fs, path, body-parser, uuid
 
 ## Login Passwords
 
@@ -17,21 +18,20 @@ username: 'user3', password: '3333'\
 username: 'user4', password: '4444'\
 username: 'yoda', password: 'theforce777'
 
-Οι απαραίτητες εξαρτήσεις υπάρχουν ήδη στο package.json.
-Μπορείτε να τις εγκαταστήσετε με χρήση της εντολής
+The necessary dependencies already exist in package.json.
+You can install them using the command
 ```
 npm install
 ```
 
-Για να δοκιμάσετε την εφαρμογή σας μπορείτε να την ξεκινήσετε με την εντολή
+To test your application you can start it with the command
 ```
 node index.js
 ```
 
-Βέβαια, μετά από κάθε αλλαγή στον κώδικα του server θα πρέπει να κάνετε επανεκκίνηση της εφαρμογής. Για διευκόλυνσή σας μπορείτε να ξεκινήσετε την εφαρμογή με τη βοήθεια του εργαλείου nodemon ως εξής:
-
+Of course, after every change in the server code you will have to restart the application. For your convenience you can start the application with the help of the nodemon tool as follows:
 ```
 nodemon index.js
 ```
 
-Κάθε φορά που αλλάζετε τον κώδικα του server, το nodemon επανεκκινεί αυτόματα τον server.
+Whenever you change the server code, nodemon automatically restarts the server.
