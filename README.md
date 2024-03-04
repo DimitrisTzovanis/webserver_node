@@ -1,6 +1,7 @@
 # inf165-webdev-project
 
 
+## Members: Dimitris Tzovanis, Elpida Stasinou
 
 - Our project consists of 4 html, 4 javascript, 1 server (index.js) and 1 css file
 - All data is fetched from the wiki-ads website and dynamically generated in the html files.
